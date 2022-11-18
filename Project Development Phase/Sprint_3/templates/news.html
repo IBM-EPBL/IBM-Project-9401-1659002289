@@ -91,20 +91,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      window.watsonAssistantChatOptions = {
-        integrationID: "380464dc-d472-4156-bdf1-3ba4aca9e386", // The ID of this integration.
-        region: "jp-tok", // The region your integration is hosted in.
-        serviceInstanceID: "5c2a539f-09e4-4815-bfe8-33e934287400", // The ID of your service instance.
-        onLoad: function(instance) { instance.render(); }
-      };
-      setTimeout(function(){
-        const t=document.createElement('script');
-        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-      });
-    </script>
     
   </body>
 </html>
