@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-deployment
+  labels:
+    app: node
+spec:
+  selector:
+    matchLabels:
+      app: node
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+        - name: node
+          image: jp.icr.io/flask1/flask
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
